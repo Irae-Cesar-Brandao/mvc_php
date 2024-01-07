@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+   <link rel="stylesheet" href="style.css">
+    <title>PADRÃO MVC EM PHP!</title>
+
+
+
+</head>
+<body background="Fundo_walpapper.jpg">
+
+<h2 style="border: solid; background-color:rgb(139, 81, 0); font-size: 80px;" >Padrão MVC em PHP 
+	<br> <img src="img_php_mvc.jpg" alt="Image" class="img2" height="300" width="550"> <br>Dicas
+	    </h2>
+		<small style="color: #FFF7; font-size: 20px;">
+			Autor: Iraê César Brandão  -  Atualizado em: <time datetime="2023-05-09">06/01/2025</time>
+			</small>
+<br><br>
+
+	<h5 style="text-justify: auto;">
+		Olá,<br>
+		espero encontrá-lo(a) bem!<br><br>
+
+		Abordaremos algumas dicas sobre a linguagem PHP e também sobre MVC.<br><br>
+		 O objetivo dessas dicas tem como foco assuntos interessantes que poderão levá-lo(a) a uma jornada de conhecimento.<br><br>
+		Curioso? Vamos lá?
+		<hr>
+		</h5>
+		<h2>O que é PHP</h2>
+			<img src="PHP-logo.svg.png" alt="Image" class="img2" height="140" width="250"> <br><br>
+		<h5>
+		O <i style="color:greenyellow; font-size:25px">PHP (Hypertext Preprocessor)</i> é uma linguagem de script de código aberto, especialmente adequada para o desenvolvimento web.<br> <br>Ela é frequentemente incorporada em HTML para adicionar funcionalidades dinâmicas a páginas da web.<br><br> PHP é uma linguagem de servidor, o que significa que o código é executado no servidor web, gerando HTML que é então enviado para o navegador do usuário<br><br>
+		O PHP É uma linguagem de programação versátil, de código aberto (gratuíto), tendo como principais características e usos:
+			<p>  &#10033;<i style="color:greenyellow; font-size:25px"> Desenvolvimento Web:</i> PHP é amplamente utilizado para criar aplicativos web dinâmicos. Ele pode ser incorporado diretamente no código HTML ou usado em conjunto com outras tecnologias web;</p>
+			<p>  &#10033;<i style="color:greenyellow; font-size:25px"> Manipulação de Formulários:</i> PHP é eficaz no processamento de dados de formulários HTML. Ele pode receber dados do usuário, processá-los e enviar resultados de volta ao navegador;</p>
+			<p> &#10033; <i style="color:greenyellow; font-size:25px"> Conexão com Bancos de Dados:</i> PHP oferece suporte a uma variedade de bancos de dados, como MySQL, PostgreSQL, SQLite, entre outros. Isso permite que você crie aplicações web que interagem com bancos de dados para armazenar e recuperar informações;</p>
+			<p> &#10033; <i style="color:greenyellow; font-size:25px"> Controle de Sessão e Cookies:</i> PHP facilita a implementação de recursos de controle de sessão e o uso de cookies para rastrear informações do usuário entre as solicitações;</p>
+			<p> &#10033;<i style="color:greenyellow; font-size:25px">Manipulação de Arquivos:</i> PHP fornece funções para manipular arquivos no servidor, como leitura, gravação, exclusão e upload de arquivos;<p>
+			<p> &#10033; <i style="color:greenyellow; font-size:25px"> Criação de APIs:</i> (Interface de Programação de Aplicações) Pode ser usado para desenvolver APIs  que permitem a comunicação entre diferentes sistemas;</p>
+			<p> &#10033; <i style="color:greenyellow; font-size:25px"> Frameworks Web:</i> Existem vários frameworks PHP, como Laravel, Symfony e CodeIgniter, que facilitam o desenvolvimento de aplicativos web escaláveis e organizados seguindo o padrão MVC;</p>
+			<p> &#10033; <i style="color:greenyellow; font-size:25px"> Geração de Conteúdo Dinâmico:</i> PHP é frequentemente usado para criar páginas web dinâmicas, onde o conteúdo pode ser personalizado com base em variáveis, dados do usuário ou outras condições.</p><br>
+				Projetada  e tem capacidade de se misturar com HTML (HyperText Markup Language), tornando-o bastante intuitivo para se desenvolver para web. O PHP é interpretado no servidor e envia para o cliente apenas a resposta (seja HTML, XML, JSON etc).<br><br>
+				Em resumo, PHP é uma linguagem versátil e popular para o desenvolvimento web, oferecendo ferramentas poderosas para criar uma ampla variedade de aplicativos dinâmicos e interativos.<br><br>
+				<hr><hr>
+
+		Muito interessante não é? Quer saber detalhes? <br>
+		Então continue lendo...<br>
+	  </h5>
+
+<br><br>
+<hr>
+
+
+<h2>Padrão de Arquitetura MVC</h2>
+<img src="MVC.png" alt="Image" height="400" width="400"><br><br>
+<h5>
+O <i style="color:greenyellow; font-size:25px">MVC </i> (Model-View-Controller) é um padrão arquitetural de design utilizado no desenvolvimento de software. <br><br>
+	Ele divide uma aplicação em três componentes principais:<br>
+<p>  &#10033;<i style="color:greenyellow; font-size:25px"> Model (Modelo): </i> Encarregada da apresentação e exibição da interface do usuário. Recebe dados do Modelo e os apresenta de forma compreensível;</p>
+<p>  &#10033;<i style="color:greenyellow; font-size:25px"> View (Visão):</i> PHP é eficaz no processamento de dados de formulários HTML. Ele pode receber dados do usuário, processá-los e enviar resultados de volta ao navegador;<p>
+<p> &#10033; <i style="color:greenyellow; font-size:25px"> Controller (Controlador):</i> Gerencia a entrada do usuário, traduzindo-a em comandos para o Modelo ou a Visão. Responde às ações do usuário e atualiza o Modelo conforme necessário.</p>
+
+	A separação dessas responsabilidades facilita a manutenção, escalabilidade e reutilização de código em aplicações, promovendo uma estrutura organizada e modular.
+<br> O MVC é amplamente utilizado em desenvolvimento web e aplicações GUI (Interface Gráfica do Usuário).<br><br>
+	Em resumo, PHP é uma linguagem versátil e popular para o desenvolvimento web, oferecendo ferramentas poderosas para criar uma ampla variedade de aplicativos dinâmicos e interativos.<br><br>
+	<hr><hr>
+
+Agora você irá aprender alguns detalhes. <br>
+Vamos lá?<br>
+</h5>
+<img src="boa_ideia.gif" alt="Image" height="200" width="200">
+<br><br>
+<hr>
+
+<br>
+
+
+<h4><b>Ferramentas Utilizadas</b></h4><br>
+			<h5>
+				Agora você saberá além da arquitetura, as ferramentas utilizadas no MVC.<br><br>
+				Vamos abordar as ferramentas para a elaboração e como elas se encaixam na construção de um aplicativo usando o padrão MVC (Model-View-Controller) com PHP. <br><br>
+				
+				&#9655; <a href="https://code.visualstudio.com/download "
+				style="color: greenyellow;" target="_blank"> 
+				 <i> VSCode </i> </a> <br><br>
+				 &#10033;	Função: O VSCode é um ambiente de desenvolvimento integrado (IDE) popular e poderoso. Ele fornece recursos avançados de edição de código, depuração, controle de versão e integração com várias linguagens de programação, incluindo PHP.<br><br>
+				 &#10033;	Uso no MVC: O VSCode é uma escolha comum entre os desenvolvedores PHP devido à sua extensibilidade. Você pode instalar extensões específicas para PHP, como "PHP IntelliSense" e "PHP Debug", que facilitam a escrita de código, fornecem sugestões e oferecem suporte à depuração.
+				<br><br><br>
+
+			
+				&#9655; <a href="https://www.apachefriends.org/pt_br/download.html"
+				style="color: greenyellow;" target="_blank"> 
+				XAMPP (ou outros servidores web): </a> <br><br>
+				&#10033;	Função: XAMPP é um pacote que inclui Apache (servidor web), MySQL (banco de dados), PHP e Perl. Ele simplifica a configuração de um ambiente de desenvolvimento local para facilitar o desenvolvimento de aplicativos web.<br><br>
+				&#10033;	Uso no MVC: Um servidor web, como o Apache fornecido pelo XAMPP, é essencial para executar e testar aplicativos PHP localmente. O Apache lida com as solicitações HTTP e executa scripts PHP, permitindo que você teste e depure seu código antes de implantá-lo em um ambiente de produção.
+				<br><br><br>
+				
+				&#9655; <a href="https://www.mozilla.org/pt-BR/firefox/new/"
+				style="color: greenyellow;" target="_blank"> 
+				BROWSERS - Navegadores Web: </a> <br><br>
+				&#10033;	Função: Navegadores, como Chrome, Firefox, ou Edge, são usados para visualizar e interagir com aplicativos web. Eles interpretam o HTML, CSS e JavaScript gerados pelo servidor, exibindo a interface do usuário e permitindo a interação do usuário.<br><br>
+				&#10033;	Uso no MVC: Os navegadores são a interface final para os usuários. O MVC no contexto web divide a aplicação em três componentes principais: Model (lógica de negócios e acesso a dados), View (apresentação e interface do usuário) e Controller (gerenciamento de solicitações e interação entre Model e View). O PHP, no lado do servidor, é frequentemente usado para implementar o Controller e o Model, enquanto a View é geralmente composta de HTML, CSS e, às vezes, JavaScript. O navegador exibe a View e interage com o Controller por meio de solicitações HTTP.
+				<br><br><br>
+
+
+				&#9655; <a href="https://downloads.mysql.com/archives/workbench/"
+				style="color: greenyellow;" target="_blank"> 
+				MySQL Workbench  </a> <br><br>
+				O MySQL Workbench é uma ferramenta gráfica popular para administrar bancos de dados MySQL, mas sua utilização não está diretamente relacionada ao padrão MVC (Model-View-Controller). O MVC é um padrão arquitetural de design que separa a lógica de negócios (Model), a apresentação (View) e o controle (Controller) em uma aplicação. <br><br>
+				No contexto do desenvolvimento web com PHP e MySQL, o MySQL Workbench pode ser utilizado para tarefas relacionadas ao banco de dados, como criar, modificar e gerenciar tabelas, executar consultas SQL, e realizar outras operações administrativas.<br><br>
+				Aqui está como o MySQL Workbench pode se relacionar com o desenvolvimento web e o padrão MVC: <br><br>
+
+				MODEL (Modelo):<br>
+				 &#10033; Uso no MVC: Os navegadores são a interface final para os usuários. O MVC no contexto web divide a aplicação em três componentes principais: Model (lógica de negócios e acesso a dados), View (apresentação e interface do usuário) e Controller (gerenciamento de solicitações e interação entre Model e View). O PHP, no lado do servidor, é frequentemente usado para implementar o Controller e o Model, enquanto a View é geralmente composta de HTML, CSS e, às vezes, JavaScript. O navegador exibe a View e interage com o Controller por meio de solicitações HTTP.
+				<br><br><br>
+				CONTROLLER (Controlador):<br>
+				&#10033; O Controller, na lógica do PHP, pode interagir com o banco de dados para realizar operações como inserção, atualização, exclusão e recuperação de dados. O MySQL Workbench não está diretamente envolvido nessa parte, mas pode ser usado para entender e verificar os dados diretamente no banco de dados.
+				<br><br><br>
+				VIEW (Visão):<br>
+				&#10033; A View, geralmente composta por arquivos HTML e PHP, exibe dados obtidos do Model. A interação com o banco de dados é geralmente tratada pelo Controller. O MySQL Workbench não está diretamente envolvido na criação da View.<br><br>
+
+			</h5>		
+<hr>
+
+				<br>
+				<h5>
+				<h5>
+					IMPORTANTE: Você poderá fazer download de todos programas listados acima, antes você deve identificar qual o seu Sistema Operacional em uso(Windows, Linux/Unix, MacOS ou outro), se é 32 ou 64 bits.  Escolher a versão compatível com seu sistema e fazer download  da versão. As instalações são intuitivas e de fácil execução bem como todos os Softwares são "Livres". <br><br>
+					Segundo a Free Software Foundation (Fundação para o Software Livre), é considerado livre qualquer programa que pode ser copiado, usado, modificado e redistribuído de acordo com as necessidades de cada usuário.</h5>
+					<br><br>
+					<h5>No desenvolvimento PHP com o padrão MVC, o Controller recebe solicitações do navegador, interage com o Model para obter ou modificar dados e atualiza a View para refletir essas alterações. Ferramentas como o VSCode, servidores web como o XAMPP e navegadores são essenciais para um fluxo de trabalho eficiente durante o desenvolvimento e teste de aplicativos web em PHP. Utilizamos o MySQL Workbench para tarefas relacionadas ao banco de dados (particularmente MySQL), a sua utilização não está diretamente vinculada à implementação do padrão MVC. Ele é mais frequentemente usado na fase de modelagem e administração do banco de dados, enquanto a implementação do MVC em PHP ocorre no código PHP, muitas vezes utilizando a extensão MySQLi ou PDO para interagir com o banco de dados a partir do código.</h5><br>
+					<hr><hr>
+
+					<br><br><br>
+		
+
+		<img src="pineal.gif" id="pineal" alt="Image" height="350" width="500"><h5   style="text-align: center; color: lightblue;"><i>"Agora que compeendeu o PHP, compreenderá como são as arquiteturas do MVC." </i></h5></img><br><br>
+
+
+		<br>
+	  <h5>
+		<hr>
+		<br>
+		<h4><b>Arquitetura do MVC <br>
+			(organização e hierarquia) </b></h4><br>
+		<h5>
+			
+				
+		<br><br> 
+		A organização de pastas (hierarquia) em um projeto MVC (Model-View-Controller) em PHP pode variar de acordo com as preferências da equipe ou as convenções adotadas pelo framework utilizado (se houver). Vou fornecer um exemplo simples sem a inclusão de um framework, onde as pastas são organizadas manualmente..<br><br>
+		Suponha que você tenha um projeto chamado "MeuProjeto" e está construindo um sistema de gerenciamento de tarefas. Aqui está uma possível hierarquia de pastas: <br><br>
+		</h5>
+		<br>
+		<img src="mvc_hierarquia.png" alt="Image" height="480" width="430"><h5   style="text-align: center; color: lightblue;">
+		  <i>MVC Arquitetura </i></h5></img><br><br>
+
+		<br><br>
+
+
+		<h5>
+			Aqui está uma breve descrição de cada pasta:<br><br>
+
+			<div style="padding-left: 70px; border-style:groove;">
+
+
+			&#10033; <i style="color:greenyellow; font-size:30px">app/:  </i>Contém a lógica da aplicação seguindo o padrão MVC.<br>
+			 <i style="color:greenyellow"> &nbsp; &nbsp;  Controllers/:</i> Armazena os controladores responsáveis por gerenciar as solicitações do usuário e interagir com o modelo e a visão.<br>
+			<i style="color:greenyellow"> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;   TaskController.php:</i> Exemplo de um controlador para manipular tarefas.<br>
+			<i style="color:greenyellow"> &nbsp; &nbsp;  Models/: </i>
+			 as classes que representam a lógica de negócios e a interação com o banco de dados.<br>
+			 <i style="color:greenyellow"> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  Task.php:</i> Exemplo de um modelo que representa uma tarefa.<br>
+			 <i style="color:greenyellow"> &nbsp; &nbsp;  Views/:</i> Contém os arquivos de interface do usuário (HTML, PHP).<br>
+			 <i style="color:greenyellow"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  task/:</i> Organiza as visualizações relacionadas a tarefas.<br>
+			 <i style="color:greenyellow"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;index.php:</i> Página de listagem de tarefas.<br>
+			 <i style="color:greenyellow"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;show.php:</i> Página de exibição detalhada de uma tarefa.<br>
+			<i style="color:greenyellow"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;create.php:</i> Página de criação de uma nova tarefa.<br>
+			<i style="color:greenyellow"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;edit.php:</i> Página de edição de uma tarefa existente.
+			<br><br>
+			&#10033; <i style="color:greenyellow; font-size:30px">public/:</i> Contém os arquivos públicos acessíveis diretamente pelo navegador.<br>
+			<i style="color:greenyellow"> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  index.php:</i> Ponto de entrada da aplicação.<br>
+			<i style="color:greenyellow"> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  css/:</i> Estilos CSS.<br>
+				<i style="color:greenyellow"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;style.css:</i> Arquivo de estilo principal.<br>
+			<i style="color:greenyellow"> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  js/:</i> Scripts JavaScript.<br>
+				<i style="color:greenyellow"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;script.js:</i> Arquivo de script principal.<br><br>
+
+
+			&#10033; <i style="color:greenyellow; font-size:30px"> config/:</i> Configurações da aplicação.<br>
+				<i style="color:greenyellow"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; database.php</i> Configurações de conexão com o banco de dados.<br><br>
+
+			&#10033; <i style="color:greenyellow; font-size:30px"> vendor/:</i> Pasta para armazenar dependências e bibliotecas de terceiros (pode ser gerada pelo Composer).<br><br>
+
+			&#10033; <i style="color:greenyellow; font-size:30px"> .gitignore:</i> Lista de arquivos e pastas a serem ignorados pelo controle de versão Git.<br><br>
+
+			&#10033; <i style="color:greenyellow; font-size:30px"> composer.json:</i> Arquivo de configuração do Composer para gerenciar as dependências do projeto.<br><br>
+
+			&#10033; <i style="color:greenyellow; font-size:30px"> README.md:</i> Documentação do projeto.<br>
+		</div>
+		<br><br>
+
+			OBSERVAÇÕES: Este é apenas um exemplo básico. Em projetos maiores, você pode considerar a utilização de namespaces, autoloaders e outras práticas recomendadas para organizar o código de forma mais eficiente. Além disso, ao usar frameworks como Laravel, Symfony ou CodeIgniter, a estrutura de pastas pode ser significativamente diferente, seguindo as convenções desses frameworks.<br><br><hr>
+
+</h5>
+
+<!-- CONVEÇÕES E NOMENCLATURAS - SEÇÃO -->
+	<hr>
+	<br>
+	<h4><b>CONVENÇÕES <br>
+		 (formas e nomenclaturas)</b></h4><br>
+	<h5>
+		
+			
+	<br><br> 
+	As convenções de codificação são conjuntos de diretrizes para cada linguagem de programação específica com recomendações sobre diferentes aspectos do desenvolvimento de software nessa linguagem, incluindo estilo de codificação, melhores práticas e métodos.<br><br>
+	
+	O <i style="color:greenyellow; font-size: 30px;">CamelCase: </i>é uma convenção de nomenclatura utilizada em programação para compor palavras ou frases em que cada palavra começa com uma letra maiúscula, sem espaços ou pontuações entre elas. O nome "CamelCase" deriva do fato de que as letras maiúsculas no meio das palavras se assemelham às corcovas de um camelo.<br><br>
+	Existem duas formas principais de CamelCase:<br><br>
+	&nbsp; &nbsp; &nbsp; <i style="color:greenyellow">Upper Camel Case (Pascal Case):</i>.<br>
+	 &nbsp; &nbsp; &nbsp; A primeira letra de cada palavra é maiúscula, incluindo a primeira palavra.<br>
+	 &nbsp; &nbsp; &nbsp; Exemplo: UpperCamelCase, NomeDaClasse, FuncaoDeExemplo.
+	 <br><br>
+
+	 &nbsp; &nbsp; &nbsp; <i style="color:greenyellow">Lower Camel Case:</i>.<br>
+	 &nbsp; &nbsp; &nbsp; •	A primeira letra da primeira palavra é minúscula, e as primeiras letras subsequentes de cada palavra são maiúsculas..<br>
+	 &nbsp; &nbsp; &nbsp; lowerCamelCase, nomeDaVariavel, funcaoDeExemplo.
+	 <br><br>
+
+	 O CamelCase é frequentemente utilizado em várias linguagens de programação, incluindo PHP, JavaScript, Java, C#, e outras. Algumas das razões para usar o CamelCase incluem:<br><br>
+
+
+	 &nbsp; &nbsp; &nbsp; &#9655; <a style="color: greenyellow;"> 
+	  <i> Legibilidade:  </i> </a> <br>
+	  	&nbsp; &nbsp; &nbsp; O CamelCase pode melhorar a legibilidade do código, especialmente em casos em que o nome da variável ou método é composto por várias palavras.<br><br>
+
+	  &nbsp; &nbsp; &nbsp; &#9655; <a style="color: greenyellow;"> 
+		<i> Padrão da Indústria:  </i> </a> <br>
+			&nbsp; &nbsp; &nbsp; Muitos padrões e diretrizes de codificação em diferentes comunidades de desenvolvimento adotam o CamelCase como uma prática comum.<br><br>
+
+	&nbsp; &nbsp; &nbsp; &#9655; <a style="color: greenyellow;"> 
+		<i> Convenção em Frameworks:   </i> </a> <br>
+			&nbsp; &nbsp; &nbsp; Muitos frameworks e bibliotecas em diversas linguagens adotam o CamelCase para consistência em seus métodos, classes e variáveis.<br><br>
+
+			As convenções para dar nomes a pastas, classes, controllers, views e models podem variar dependendo do framework que você está utilizando ou das práticas adotadas em sua equipe de desenvolvimento. No entanto, existem algumas convenções comuns que são frequentemente seguidas, especialmente em frameworks populares como Laravel, Symfony, CodeIgniter, entre outros. Aqui estão algumas sugestões de convenções:<br><br>
+</h5>
+<hr>
+<h5>
+
+	&#10033; <i style="color:greenyellow; font-size:30px">Pastas:</i>
+	
+	<p><i style="color:greenyellow">Controllers:  </i><br>
+		Muitas vezes, a pasta de controladores é chamada de "Controllers" ou "Controller".<br>
+		Os nomes dos controladores muitas vezes são no plural, refletindo a ideia de gerenciamento de um conjunto de entidades.<br>
+		Exemplo: UsersController, TasksController. <br><br>
+
+ 		<i style="color:greenyellow">Models: </i><br>
+		A pasta de modelos pode ser chamada de "Models" ou "Model".<br>
+		Os nomes dos modelos frequentemente representam uma entidade singular e podem estar no singular.<br>
+		Exemplo: User, Task.<br><br>
+
+ 		<i style="color:greenyellow">Views: </i><br>
+		 A pasta de visualizações pode ser chamada de "Views" ou "View".<br>
+		 Os nomes dos arquivos de visualização podem refletir a ação ou recurso, muitas vezes no singular.<br>
+		 Exemplo: user/index.php, task/show.php.<br><br>
+		 
+		 Composição:<br><br>
+					<div style="padding-left: 70px; border-style:groove;">
+
+							<i style="color: aqua">app/<br>
+							|-- Controllers<br>
+							|-- Models/<br>
+							|-- Views/</i>
+							<br>
+						</p> 
+					</div><br>
+
+
+	 &#10033; <i style="color:greenyellow; font-size:30px">Classes:</i>
+	
+	 <p><i style="color:greenyellow"> Controllers:  </i><br>
+		Os controladores geralmente têm nomes que refletem a entidade ou recurso que estão manipulando, seguido do termo "Controller".<br>
+		 Os nomes dos controladores muitas vezes são no plural, refletindo a ideia de gerenciamento de um conjunto de entidades.<br>
+		 Exemplo:<br><br>
+					<div style="padding-left: 70px; border-style:groove;"><br>
+							<i style="color: aqua"> // Nome do arquivo: Task.php<br>
+							class Task { <br>
+							// ...<br>
+							}</i><br>
+						</p> 
+					</h5>
+					</div>
+<h5>
+
+
+	  <p><i style="color:greenyellow">Models:   </i><br>
+		Os modelos geralmente têm nomes que representam a entidade de dados que estão manipulando.<br>
+		  Exemplo:<br><br>
+					<div style="padding-left: 70px; border-style:groove;"><br>
+							<i style="color: aqua"> // Nome do arquivo: Task.php<br>
+							class TaskController { <br>
+								&nbsp; &nbsp; &nbsp; // ...<br>
+							}</i><br><br>
+						</p>
+					</div><br>
+		
+
+	  	&#10033; <i style="color:greenyellow; font-size:30px">Views:</i>
+	
+	  		<p> O nome dos arquivos de visualização geralmente reflete a ação ou propósito da visualização. Por exemplo, para um controlador chamado TaskController, você pode ter arquivos como index.php, show.php, create.php, edit.php, etc., na pasta Views/Task/.<br><br><br>
+
+		&#10033; <i style="color:greenyellow; font-size:30px"> Controllers e Actions (Métodos dos Controllers):</i>
+			</p>Os métodos em um controlador muitas vezes têm nomes que refletem as ações que estão realizando. Por exemplo, para um controlador de tarefas (TaskController), você pode ter métodos como index(), show(), create(), edit(), etc.<br><br>
+			<div style="padding-left: 70px; border-style:groove;"><br>
+					<i style="color: aqua;"> class TaskController {<br><br>
+						public function index() {<br>
+							&nbsp; &nbsp; &nbsp;// ...<br>
+						}<br><br>
+					
+						public function show() {<br>
+							&nbsp; &nbsp; &nbsp;// ...<br>
+						}<br><br>
+					
+						public function create() { <br>
+							&nbsp; &nbsp; &nbsp;// ...<br>
+
+						}<br>
+					
+						public function edit() { <br>
+							&nbsp; &nbsp; &nbsp; // ...<br>
+							&nbsp; &nbsp;}<br>
+					
+					}
+				</i><br><br>
+				</div>
+				
+				<br><br>
+
+				Essas são apenas convenções comuns e não regras estritas. Ao trabalhar com um framework específico, é sempre uma boa prática consultar a documentação do framework para entender as convenções específicas que ele adota. Além disso, a consistência dentro de sua equipe de desenvolvimento é fundamental, independentemente das convenções específicas escolhidas.<br><br><br><br>
+
+				<i style="color:greenyellow; font-size: 30px;"><b>CONSIDERAÇÕES:</b><br><br></i>
+
+				Além do CamelCase, existem outras convenções de nomenclatura comumente utilizadas em PHP e no desenvolvimento em geral.<br><br>
+				
+				Aqui estão algumas delas:<br><br>
+				<i style="color:greenyellow; font-size: 30px;">Snake Case:</i><br>
+				Todas as palavras são minúsculas, e espaços entre palavras são substituídos por underscores.<br>
+				Exemplo: nome_do_metodo, variavel_nomeada, nome_da_funcao.<br><br>
+				
+				<i style="color:greenyellow; font-size: 30px;">Kebab Case (ou Hyphen Case)</i><br>
+				Semelhante ao Snake Case, mas com hífens em vez de underscores.<br>
+				Exemplo: nome-do-metodo, variavel-nomeada, nome-da-funcao.<br><br>
+				
+				<i style="color:greenyellow; font-size: 30px;">Pascal Case (ou Upper Camel Case):</i><br>
+				Semelhante ao Camel Case, mas o primeiro caractere também é maiúsculo.<br>
+				Exemplo: NomeDoMetodo, ClassePrincipal, NomeDaFuncao.<br><br>
+
+				<i style="color:greenyellow; font-size: 30px;">Screaming Snake Case (ou Constant Case):</i><br>
+				Todas as letras são maiúsculas, e espaços entre palavras são substituídos por underscores.<br>
+				Exemplo: NOME_DA_CONSTANTE, VALOR_MAXIMO, CONFIGURACAO_PADRAO.<br><br>
+				
+				<i style="color:greenyellow; font-size: 30px;">Hungarian Notation:</i><br>
+				Prefixa o nome da variável com um ou mais caracteres indicando o tipo ou propriedade da variável.<br>
+				Exemplo: strNome, intIdade, boolAtivo.<br><br>
+				
+				<i style="color:greenyellow; font-size: 30px;">Lisp Case:</i><br>
+				Semelhante ao Kebab Case, mas usa apenas letras minúsculas.<br>
+				Exemplo: nome-da-funcao, variavel-de-exemplo.<br><br>
+				
+				Cada convenção tem suas próprias vantagens e é escolhida com base nas preferências da equipe ou nas diretrizes do projeto. A consistência é fundamental para facilitar a leitura e manutenção do código. Em muitos projetos e frameworks PHP, Camel Case e Snake Case são amplamente adotados para nomes de classes e métodos, enquanto Snake Case é comumente usado para nomes de variáveis e colunas de banco de dados.<br><br>
+					
+	</h5>
+
+		
+
+			<h4><b>Elementos das Linguagens de Programação</b></h4><br><br>
+			<h5>
+				As linguagens de programação têm vários elementos que permitem a criação de algoritmos e programas. </h4>
+		<br>
+		<h4 style="text-align: center;">Quer saber como são?<br>
+			 Abaixo listamos os elementos:</h4><br>
+		<h5>
+		<p> &#9989; <u>Sintaxe</u>: é a forma como as instruções e expressões são escritas na linguagem (estrutura, pontuação e regras);</p>
+
+		<p> &#9989; <u>Semântica</u>: é o significado das instruções e expressões em um programa e como se relacionam com o mundo real e com outras instruções do programa;</p>
+
+		<p> &#9989; <u>Tipos de dados</u>: são as diferentes categorias de dados que podem ser usadas em um programa, como números, texto, booleanos, entre outros;</p>
+
+		<p> &#9989; <u>Variáveis</u>: são os nomes que se atribuem aos valores de dados em um programa, permitindo que eles sejam referenciados e manipulados ao longo da execução do programa;</p>
+
+		<p> &#9989;  <u>Estruturas de controle</u>: são as instruções que controlam o fluxo de execução do programa, como condicionais (if-else), loops (for, while) e chamadas de função;</p>
+
+		<p> &#9989; <u> Bibliotecas e frameworks (Lexis)</u>: são conjuntos de código pré-existente que podem ser usados em programas para realizar tarefas específicas, como processamento de imagens, manipulação de dados, construção de interfaces gráficas, entre outras.</p>
+		<br>
+		 <u><i style="color:greenyellow">OBS</i></u>: Todos esses elementos  são combinados de diferentes maneiras em cada linguagem, mas permitem que os programadores expressem soluções de problemas de forma estruturada.
+				</h5><br><br>
+				<hr><hr>  
+
+
+		<h4><b>Compilação e Interpretação</b></h4><br><br>
+		<h5>
+			Numa explicação de poucas palavras, PHP é uma linguagem de programação utilizada por programadores e desenvolvedores para construir sites dinâmicos, extensões de integração de aplicações e agilizar no desenvolvimento de um sistema.<br><br>
+			Existem quatro itens importantes na composição das linguagens de programação: 
+			<i style ="color:greenyellow">
+			<p>&#x2776;  A ordem alfabética para escrita (com script reconhecível);</p>
+			<p>&#X2777;  O domínio do dicionário léxico da linguagem;</p>
+			<p>&#X2778;  A obediência às regras sintáticas da linguagem;</p>
+			<p>&#X2779;  Coerência semântica do programa (o programa tem de fazer sentido).</p></i>
+			</h4><BR>
+				<hr>
+
+
+		<h4><b>Como aprender a usar o PHP?</b></h4><br><br>
+				<h5>
+	
+					<br>Algumas das principais características do PHP incluem sua simplicidade, suporte para vários bancos de dados, ampla documentação e uma grande comunidade de desenvolvedores ativos.<br><br>
+					 Entre os principais recursos, estão:<br><br>
+
+					 &#9655; <u style="color: red;"> Interpretação do lado do servidor:</u> O PHP é executado no servidor, o que significa que o código é processado no servidor antes que o resultado seja enviado para o navegador do usuário. <br><br>
+
+					 &#9655; <u style="color: red;"> Suporte para bancos de dados:</u> essa linguagem oferece suporte para uma ampla variedade de bancos de dados, incluindo MySQL, PostgreSQL e SQLite. <br><br>
+
+					 &#9655; <u style="color: red;"> Facilidade de uso:</u> mesmo para iniciantes em programação.<br><br>
+
+					 &#9655; <u style="color: red;"> Compatibilidade com outras tecnologias:</u>  O PHP é compatível com várias outras tecnologias de web, incluindo HTML, CSS e JavaScript. <br><br>
+
+					 &#9655; <u style="color: red;"> Ampla documentação:</u> possui uma documentação abrangente e atualizada regularmente, o que facilita o aprendizado e o desenvolvimento.<br><br>
+
+					 &#9655; <u style="color: red;">Grande comunidade:</u> O PHP possui um grande grupo de desenvolvedores ativos, que fornecem suporte e recursos para outros desenvolvedores.<br><br>
+
+					Você pode pesquisar na Web, fazer cursos em plataformas gratuítas e participar de comunidades.<br><br>
+					 Saiba mais:<br><br> <a href="https://www.devmedia.com.br/guia/linguagem-php/38780" style="color: greenyellow;" target="_blank"> DEVMEDIA - Linguagem PHP</a>
+					&nbsp; &nbsp;
+					<a href="https://www.devmedia.com.br/a-arquitetura-mvc-no-desenvolvimento-em-php/2312" style="color: greenyellow;" target="_blank">GUIA DE CARREIRA.</a>
+					
+<br><hr><hr><br>
+
+<div style="text-align: center;">
+<img src="Foto_irae.jpg" alt="Image"  max-width="50px" id="pineal"><h5  style="text-align: center; color: lightblue;">
+		  <i> Iraê César Brandão <br>Prof. e Desenvolvedor</i><h5></img>
+	 </div>
+	</h5>	
+
+	<img src="Credeniais_div.png" alt="Image" height="120" width="500"><h5   style="text-align: center; color: lightblue;">
+
+			<hr></h5>	
+		
+
+	<h4 style="text-align: center;"><b>Referências</b> </h4> 
+
+	<h5>	
+
+		DEVMEDIA. A arquitetura MVC no desenvolvimento em PHP. Disponível em: 	<a href="https://www.devmedia.com.br/a-arquitetura-mvc-no-desenvolvimento-em-php/2312" style="color: greenyellow;" target="_blank"> https://www.devmedia.com.br/a-arquitetura-mvc-no-desenvolvimento-em-php/2312</a>. Acesso em: 06.Jan.2024.<br><br>
+
+		DEVMEDIA. Padrão MVC - Java Magazine. Disponível em: <a href="https://www.devmedia.com.br/padrao-mvc-java-magazine/21995" style="color: greenyellow;" target="_blank">https://www.devmedia.com.br/padrao-mvc-java-magazine/21995</a>. Acesso em: 06.Jan.2024.<br><br>
+
+		GUIA DE CARREIRA. Entenda o que é PHP e aprenda a usar no desenvolvimento web. Disponível em: <a href="https://www.guiadacarreira.com.br/blog/php" style="color: greenyellow;" target="_blank">  https://www.guiadacarreira.com.br/blog/php</a>. Acesso em: 06-Jan.2024.<br><br>
+
+		MYSQL.  MySQL Workbench. Disponível em:<a href="https://www.mysql.com/products/workbench/" style="color: greenyellow;" target="_blank"> https://www.mysql.com/products/workbench/</a>. Acesso em: 06-Jan.2024.<br><br>
+
+		STAKEOVERFLOW. Como e para que usar MVC no PHP? Disponível:	<a href="https://pt.stackoverflow.com/questions/243958/como-escolher-uma-conven%c3%a7%c3%a3o-para-nome-de-vari%c3%a1veis-e-fun%c3%a7%c3%b5es"
+		style="color: greenyellow;" target="_blank"> https://pt.stackoverflow.com/questions/243958/como-escolher-uma-conven%c3%a7%c3%a3o-para-nome-de-vari%c3%a1veis-e-fun%c3%a7%c3%b5es</a>. Acesso em: 06-Jan.2024.<br><br>
+
+		STAKEOVERFLOW. Como escolher uma convenção para nome de variáveis e funções? Disponível em: <a href="https://pt.stackoverflow.com/questions/114824/como-e-para-que-usar-mvc-no-php" style="color: greenyellow;" target="_blank">  https://pt.stackoverflow.com/questions/114824/como-e-para-que-usar-mvc-no-php</a>. Acesso em: 06-Jan.2024.<br><br>
+
+		APACHE FRIENDS.  XAMPP Apache + MariaDB + PHP + Perl. Disponível em: <a href="https://www.apachefriends.org/pt_br/index.html" style="color: greenyellow;" target="_blank">https://www.apachefriends.org/pt_br/index.html</a>. Acesso em: 06-Jan.2024.<br><br>
+
+		WIKIPÉDIA. CamelCase. Disponível em: <a href="https://pt.wikipedia.org/wiki/CamelCase"
+		style="color: greenyellow;" target="_blank"> https://pt.wikipedia.org/wiki/CamelCase</a>. Acesso em: 06-Jan.2024.<br><br>
+
+		WIKIPEDIA. PHP. Disponível em: 	<a href="https://pt.wikipedia.org/wiki/PHP" style="color: greenyellow;" target="_blank">https://pt.wikipedia.org/wiki/PHP</a>. Acesso em: 06-Jan.2024.<br><br>
+
+		<h4 style="text-align: center;">Crédito de Imagens </h4><br>
+
+		
+		GIFER. Idea transparent GIF - Find on GIFER. Disponível em:
+		<a href="https://gifer.com/en/YkAw"
+		style="color: greenyellow;" target="_blank">https://gifer.com/en/YkAw</a>. Acesso em: 06-Jan.2024.<br><br>
+
+		MICROSOFT- ASPNET CORE. Overview of ASP.NET Core MVC. Disponível em:
+		<a href="https://learn.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-8.0"style="color: greenyellow;" target="_blank"> https://learn.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-8.0</a>. Acesso em: 06-Jan.2024.<br><br>
+	</h5>
+		
+	
+</body>
+<footer style="background-color: rgb(140, 51, 228);">
+<h7  style="color: lightblue; text-align: center; font-size: 15px;"> &copy;  Iraê C. Brandão  2024 -  Todos os direitos reservados - Desenvolvedor Web / Gestor de TI / Empresário / Contabilista / Professor de Tecnologia/Oficina Multidisciplinar - <a href="https://www.linkedin.com/in/irae-cesar-brandao-a2112b69/" style="color: rgb(175, 167, 181);" target="_blank"> https://www.linkedin.com/in/irae-cesar-brandao-a2112b69/ 
+	</a></h7> 
+<br>
+</footer>
+</html>
